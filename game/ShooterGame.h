@@ -11,14 +11,10 @@
 #include "ShooterGame.h"
 #include "../engine/ApplicationAdapter.h"
 
-class ShooterGame : public ApplicationAdapter {
-private:
-    sf::Texture texture;
-    sf::Sprite sprite;
-
-public:
+struct ShooterGame : public ApplicationAdapter {
     void create() override;
     void render(sf::RenderWindow &window) override;
+    void update(float delta) override;
 };
 
 

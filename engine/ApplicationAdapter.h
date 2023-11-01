@@ -7,12 +7,20 @@
 
 
 #include <SFML/Graphics/RenderWindow.hpp>
+#include "system/Registry.h"
+#include "system/SpriteSystem.h"
+#include "system/TransformSystem.h"
 
 class ApplicationAdapter {
 public:
     virtual void create();
     virtual void render(sf::RenderWindow &window);
+    virtual void update(float delta);
     virtual void dispose();
+
+    Registry registry;
+    SpriteSystem spriteSystem;
+    TransformSystem transformSystem;
 };
 
 

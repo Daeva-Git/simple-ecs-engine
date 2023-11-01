@@ -8,10 +8,33 @@ set(SOURCE_FILES main.cpp
         engine/ApplicationAdapter.h
         game/ShooterGame.cpp
         game/ShooterGame.h
-        engine/GameObject.cpp
-        engine/GameObject.h
-        engine/Component.cpp
-        engine/Component.h)
+        engine/components/Component.cpp
+        engine/components/Component.h
+        game/Survivor.cpp
+        game/Survivor.h
+        engine/system/ComponentSystem.cpp
+        engine/system/ComponentSystem.h
+        engine/system/Registry.cpp
+        engine/system/Registry.h
+        engine/system/Registry.cpp
+        engine/entity/Entity.cpp
+        engine/entity/Entity.h
+        engine/components/TransformComponent.cpp
+        engine/components/TransformComponent.h
+        engine/components/SpriteComponent.cpp
+        engine/components/SpriteComponent.h
+        engine/system/Registry.cpp
+        engine/system/SpriteSystem.cpp
+        engine/system/SpriteSystem.h
+        engine/system/TransformSystem.cpp
+        engine/system/TransformSystem.h
+        engine/system/InputSystem.cpp
+        engine/system/InputSystem.h
+        game/system/GameRegistry.cpp
+        game/system/GameRegistry.h
+        engine/components/InputComponent.cpp
+        engine/components/InputComponent.h
+)
 add_executable(cpp ${SOURCE_FILES}) # project name
 include_directories(/usr/local/include)
 

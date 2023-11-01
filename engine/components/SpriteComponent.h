@@ -10,7 +10,7 @@
 #include <SFML/Graphics/Sprite.hpp>
 #include "Component.h"
 
-class SpriteComponent : public Component {
+struct SpriteComponent : public Component {
 private:
     sf::Texture* texture;
     sf::Sprite sprite;

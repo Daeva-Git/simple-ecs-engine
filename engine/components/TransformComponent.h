@@ -7,7 +7,7 @@
 
 #include "Component.h"
 
-class TransformComponent : public Component {
+struct TransformComponent : public Component {
 public:
     float vel_x{};
     float vel_y{};

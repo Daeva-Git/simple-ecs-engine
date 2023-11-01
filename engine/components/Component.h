@@ -6,8 +6,8 @@
 #define CPP_COMPONENT_H
 
 
-class Component {
-
+struct Component {
+    long id;
 };
 
 

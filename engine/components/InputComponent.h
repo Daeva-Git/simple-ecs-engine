@@ -8,7 +8,7 @@
 
 #include "Component.h"
 
-class InputComponent : public Component {
+struct InputComponent : public Component {
 
 };
 

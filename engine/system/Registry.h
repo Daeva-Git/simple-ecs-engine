@@ -2,6 +2,7 @@
 #include "../entity/Entity.h"
 #include "../components/SpriteComponent.h"
 #include "../components/TransformComponent.h"
+#include "../components/InputComponent.h"
 
 //
 // Created by Davit Stepanyan on 02.10.23.
@@ -15,6 +16,7 @@ struct Registry {
     std::unordered_map<size_t, Entity> entities{};
     std::unordered_map<Entity, SpriteComponent> sprites{};
     std::unordered_map<Entity, TransformComponent> transforms{};
+    std::unordered_map<Entity, InputComponent> inputs{};
 };
 
 

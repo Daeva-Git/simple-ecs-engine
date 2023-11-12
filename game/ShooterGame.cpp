@@ -12,7 +12,7 @@ void ShooterGame::create() {
     // register entity
     registry.entities[entity.getId()] = entity;
     // register sprite
-    registry.sprites[entity] = SpriteComponent("../raw-assets/survivor-idle_rifle_0.png");
+    registry.sprites[entity] = SpriteComponent("../../raw-assets/survivor-idle_rifle_0.png");
     // register sprite
     TransformComponent transformComponent = TransformComponent();
     //transformComponent.pos_x = 400;  // Near the center of the window's width
